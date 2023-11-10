@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE,edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Abra sua conta - Inteliogia</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1,h2 {
+            color: white;
+            text-align: center;
+        }
+        .forest-background {
+            background: url('floresta.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 20px;
+        }
+        .form-container {
+            margin: 0 auto;
+            width: 50%;
+            height: 400px;
+            background: linear-gradient(to bottom, #3498db, #f1c40f);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .form-container form {
+            background-color: #ffffff;
+            padding: 150px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.jpeg" alt="Logo"></a>
+        <h1>Agilidade e Praticidade na palma da sua mão</h1>
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar ao índice</a>
+    </header>
+
+    <div class="forest-background">
+        <h2>Formulario da consulta de saldo</h2>
+
+        <div class="form-container">
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="tipoConta">Tipo de Conta:</label>
+                <select id="tipoConta">
+                    <option value="corrente">Conta Corrente</option>
+                    <option value="poupanca">Conta Poupança</option>
+                    <option value="outra">Outra Conta</option>
+                </select>
+                <br><br>
+                
+                <input type="button" value="Consultar Saldo" onclick="consultarSaldo()">
+            </form>
+            
+            <div id="resultado"></div>
+            
+            <script>
+                function consultarSaldo() {
+                    var tipoConta = document.getElementById("tipoConta").value;
+                    var saldo;
+        
+                    // Simulação de saldo com valores aleatórios para cada tipo de conta
+                    if (tipoConta === "corrente") {
+                        saldo = Math.floor(Math.random() * 10000 + 1000);
+                    } else if (tipoConta === "poupanca") {
+                        saldo = Math.floor(Math.random() * 50000 + 5000);
+                    } else {
+                        saldo = Math.floor(Math.random() * 1000 + 100);
+                    }
+        
+                    document.getElementById("resultado").innerHTML = "Saldo da " + tipoConta + ": R$ " + saldo.toFixed(2);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

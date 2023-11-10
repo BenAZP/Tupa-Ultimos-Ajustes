@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE,edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quero Investir</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1,h2 {
+            color: white;
+            text-align: center;
+        }
+        .forest-background {
+            background: url('floresta.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 20px;
+        }
+        .form-container {
+            margin: 0 auto;
+            width: 50%;
+            height: 400px;
+            background: linear-gradient(to bottom, #3498db, #f1c40f);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .form-container form {
+            background-color: #ffffff;
+            padding: 90px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.jpeg" alt="Logo"></a>
+        <h1>Agilidade e Praticidade na palma da sua mão</h1>
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar ao índice</a>
+    </header>
+
+    <div class="forest-background">
+        <h2>Realização de investimento</h2>
+
+        <div class="form-container">
+            <form>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+    
+                <label for="investimento">Tipo de Investimento:</label>
+                <select id="investimento" name="investimento">
+                    <option value="acoes">Ações</option>
+                    <option value="rendafixa">Renda Fixa</option>
+                    <option value="fundos">Fundos de Investimento</option>
+                </select>
+                <br><br>
+    
+                <label for="valor">Valor do Investimento:</label>
+                <input type="number" id="valor" name="valor" required>
+                <br><br>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <br><br>
+    
+                <input type="submit" value="Enviar Solicitação">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

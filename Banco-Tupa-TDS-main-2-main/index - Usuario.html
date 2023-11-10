@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slide.css">
+    <script src="slide.js" defer></script>
+    <link rel="icon" type="text/x-icon" href="icon.png">
+    <title>Tupã</title>
+    
+</head>
+<body>
+    <div class="container">
+    <header>
+        <a href="#"><img src="logo.jpeg" alt="Logo"></a>
+    
+        <h1>Agilidade e Praticidade na palma da sua mão</h1>
+        <a href="outra-pagina.html">
+            <img src="perfil-fulano.jpg" alt="Foto de Fulano" class="user-avatar">
+        </a>
+        <span class="user-name">Paulo almeida da costa</span>
+        <a href="index.html" class="logout-button">Sair</a>
+</header>
+
+<nav class="navbar">
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Pesquisar...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+
+    <section class="slider">
+        <div class="slider-content">
+            
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="img/img1.jpg" height="448" width="1040" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="img/img2.jpg" height="448" width="1040" alt="slide 3">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="img/img3.jpg" height="448" width="1040" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+   <div class="button-container">
+
+    <div class="solicitar-cartao">
+        <a href="solicitar-cartao.html" class="btn-solicitar-cartao">Solicitar cartão</a>
+    </div>
+
+
+<div class="quero-investir">
+    <a href = "quero-investir.html" class = "btn-quero-investir">Quero Investir</a>
+</div>
+
+<div class="faca-seu-emprestimo">
+    <a href="faca-seu-emprestimo.html" class="btn-faca-seu-emprestimo">Faça seu emprestimo</a>
+</div>
+
+<div class="consulta-saldo">
+    <a href="consultar-saldo.html" class="btn-consulta-saldo">Consultar saldo</a>
+</div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="rodape">
+    &copy; 2023 de B G E | Precisa de ajuda? <a href="suporte.html">Suporte Técnico</a>
+</div>
+</div>
+
+<!-- Script para pesquisa > -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("search");
+      const searchButton = document.querySelector(".search-bar button");
+    
+      searchButton.addEventListener("click", function () {
+        const searchTerm = searchInput.value.toLowerCase();
+        if (searchTerm === "ajuda") {
+          // Redirecionar para a página de suporte
+          window.location.href = "suporte.html";
+        }
+      });
+    });
+
+    
+
+
+    
+    </script>
+    
+</body>
+</html>

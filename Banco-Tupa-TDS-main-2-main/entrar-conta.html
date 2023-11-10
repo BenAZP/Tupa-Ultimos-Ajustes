@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE,edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acessar Conta - Tupã Investimentos</title>
+    <link rel="icon" type="text/x-icon" href="logo.jpeg">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="logo.jpeg" alt="Logo"></a>
+        <h1>Agilidade e Praticidade na palma da sua mão</h1>
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar ao índice</a>
+    </header>
+
+    <div class="forest-background">
+        <h2>Paulo é você?</h2>
+        <div class="form-container">
+            <form>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <button type="button" onclick="checkPassword()">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var passwordInput = document.getElementById("password").value;
+            if (passwordInput === "123456") {
+                window.location.href = "index - Usuario.html";
+            } else {
+                alert("Senha incorreta. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
